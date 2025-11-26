@@ -1,3 +1,4 @@
+
  # Discord Bot v14 Template
  ## Slash Commands Handler 
  ### Installation
@@ -14,6 +15,7 @@ module.exports = {
   betatoken: '' || process.env.betatoken, // beta token
   id: "" || process.env.id, // main bot id
   betaID: ''|| process.env.betaID, // beta id
+  
   ownerID: "" || process.env.ownerID, // owner id
   mongourl: "" || process.env.mongourl, // mongourl for when you want to use the Database
   embedColor: 0x00ffff || process.env.embedColor,
