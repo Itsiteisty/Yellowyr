@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casa do Vazio — Terror Web</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="game" class="screen mansion">
+    <section id="menu" class="panel panel--wide">
+      <p class="eyebrow">survival horror web</p>
+      <h1>Casa do Vazio</h1>
+      <p>
+        Fuja de uma velha casa abandonada antes que a entidade encontre você.
+        Explore cômodos escuros, pegue chaves e mantenha sua sanidade longe do zero.
+      </p>
+      <div class="actions">
+        <button id="startButton" class="button">Entrar na casa</button>
+        <button id="howButton" class="button button--ghost">Como jogar</button>
+      </div>
+    </section>
+
+    <section id="hud" class="hud hidden" aria-live="polite">
+      <span id="roomName">Entrada</span>
+      <span>Sanidade: <strong id="sanity">100</strong>%</span>
+      <span>Inventário: <strong id="inventory">vazio</strong></span>
+      <span>Tempo: <strong id="timer">05:00</strong></span>
+    </section>
+
+    <section id="story" class="panel hidden">
+      <h2 id="storyTitle">Entrada</h2>
+      <p id="storyText"></p>
+      <div id="choices" class="choices"></div>
+    </section>
+
+    <section id="instructions" class="panel hidden">
+      <h2>Como jogar</h2>
+      <ul>
+        <li>Escolha caminhos para explorar a mansão.</li>
+        <li>Itens destravam novas rotas e finais.</li>
+        <li>Algumas escolhas drenam sanidade; se chegar a zero, a noite vence.</li>
+        <li>O objetivo é ligar o gerador, achar a chave do portão e escapar.</li>
+      </ul>
+      <button id="backButton" class="button button--ghost">Voltar</button>
+    </section>
+  </main>
+
+  <script src="./game.js"></script>
+</body>
+</html>
