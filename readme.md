@@ -1,4 +1,19 @@
 
+## Casa do Vazio - jogo de terror web
+
+Este repositório agora também serve um mini jogo de terror em HTML, CSS e JavaScript inspirado em survival horror clássico.
+
+### Executar o jogo
+
+```shell
+npm start
+```
+
+Abra `http://localhost:3000` no navegador. A rota `/health` continua retornando `OK` para health checks.
+
+O jogo usa imagens remotas do Unsplash como cenário, então a experiência visual melhora quando o navegador tem acesso à internet.
+
+
  # Discord Bot v14 Template
  ## Slash Commands Handler 
  ### Installation
